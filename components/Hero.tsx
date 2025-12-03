@@ -33,14 +33,14 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-serif font-bold text-[#0F2C59] leading-[1.1] mb-6 tracking-tight">
-              A cleaner home, <br/>
+              A cleaner place, <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#84A7D8] to-[#0F2C59]">
                 a clearer mind.
               </span>
             </h1>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
-              Premium residential and commercial cleaning in Toronto. We don't just clean; we curate a pristine environment for you to thrive in.
+              Premium residential and commercial cleaning in GTA. We don't just clean; we curate a pristine environment for you to thrive in.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
           <div className="w-full lg:w-1/2 relative">
             <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-blue-900/10 border-8 border-white">
               <img 
-                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop" 
+                src="https://janikingso.com/wp-content/uploads/2025/08/understanding-different-types-of-commercial-cleaning-services.jpg" 
                 alt="Pristine modern living room" 
                 className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
               />

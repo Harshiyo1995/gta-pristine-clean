@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="mb-6 bg-white rounded-xl p-3 inline-block">
                <img 
-                 src="https://i.imgur.com/K3Ea4aX.png" 
-                 alt="CMG Cleaning Solutions" 
-                 className="h-12 w-auto object-contain"
+                 src="./logo.png" 
+              alt="CMG Cleaning Solutions" 
+              className="h-16 w-15 object-contain"
                />
             </div>
             <p className="text-sm leading-relaxed mb-4">

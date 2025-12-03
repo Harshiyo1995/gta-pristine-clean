@@ -13,12 +13,12 @@ const WhyChooseUs: React.FC = () => {
              
              <div className="relative z-10 grid grid-cols-2 gap-4">
                <img 
-                 src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068&auto=format&fit=crop" 
+                 src="https://images.unsplash.com/photo-1563453392212-326f5e854473?q=80&w=2070&auto=format&fit=crop" 
                  alt="Detail cleaning" 
                  className="w-full h-64 object-cover rounded-3xl shadow-lg transform translate-y-8 hover:translate-y-6 transition-transform duration-500"
                />
                <img 
-                 src="https://images.unsplash.com/photo-1581578731117-104f2a41272c?q=80&w=2070&auto=format&fit=crop" 
+                 src="https://www.wilburncompany.com/wp-content/uploads/2020/04/iStock-1205555348-1024x683.jpg" 
                  alt="Happy cleaners" 
                  className="w-full h-64 object-cover rounded-3xl shadow-lg transform -translate-y-8 hover:-translate-y-6 transition-transform duration-500"
                />
