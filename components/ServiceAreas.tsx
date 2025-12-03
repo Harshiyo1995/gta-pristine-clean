@@ -27,7 +27,7 @@ const ServiceAreas: React.FC = () => {
           <div className="w-full md:w-1/2 h-[400px] bg-gray-100 rounded-3xl overflow-hidden relative shadow-lg">
             {/* Real Toronto Skyline */}
             <img 
-              src="https://images.unsplash.com/photo-1517090504586-fde19ea6066f?q=80&w=2070&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=2144&auto=format&fit=crop" 
               alt="Toronto skyline" 
               className="w-full h-full object-cover"
             />

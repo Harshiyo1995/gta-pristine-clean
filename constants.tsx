@@ -124,8 +124,7 @@ export const PRICING: PricingPlan[] = [
       'Inside windows',
       'Heavy stain removal',
       'Wall spot cleaning',
-      'Garage sweeping',
-      '100% Deposit Back Guarantee'
+      'Garage sweeping'
     ]
   }
 ];
