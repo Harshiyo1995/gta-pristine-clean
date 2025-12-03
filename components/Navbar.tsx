@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={scrollToTop}>
             <img 
-              src="./logo.png" 
+              src="https://i.postimg.cc/020bjkMz/logo.png" 
               alt="CMG Cleaning Solutions" 
               className="h-16 w-15 object-contain"
             />

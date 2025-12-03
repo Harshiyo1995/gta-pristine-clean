@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="mb-6 bg-white rounded-xl p-3 inline-block">
                <img 
-                 src="./logo.png" 
+                 src="https://i.postimg.cc/020bjkMz/logo.png" 
               alt="CMG Cleaning Solutions" 
               className="h-16 w-15 object-contain"
                />
