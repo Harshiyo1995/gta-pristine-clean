@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Clock, ChevronDown } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({
@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 bg-white relative scroll-mt-24">
        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#0F2C59] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row relative">
+        <div className="bg-[#0F2C59] rounded-[3rem] overflow-hidden shadow-2xl flex flex-col lg:flex-row relative mb-24">
           
           {/* Decorative background for the whole card */}
           <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
@@ -175,9 +175,60 @@ const Contact: React.FC = () => {
             </form>
           </div>
         </div>
+
+        {/* FAQ Section */}
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-[#84A7D8] font-semibold tracking-wider uppercase text-sm">Common Questions</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#0F2C59] mt-3">Frequently Asked Questions</h2>
+          </div>
+
+          <div className="grid gap-6">
+            <FaqItem 
+              question="Do I need to be home during the cleaning?" 
+              answer="No, you do not need to be home. Many of our clients provide us with a key, lockbox code, or smart lock access. We are fully insured and our staff is vetted for your peace of mind."
+            />
+            <FaqItem 
+              question="Do you bring your own cleaning supplies?" 
+              answer="Yes! We bring professional-grade equipment and eco-friendly cleaning supplies. If you have specific products you prefer us to use, just let us know and we will happily use them."
+            />
+            <FaqItem 
+              question="Are you pet friendly?" 
+              answer="Absolutely. We love pets! We use safe, non-toxic products. Please let us know if you have pets so we can ensure they are safe and comfortable during our visit."
+            />
+            <FaqItem 
+              question="How do I pay for the service?" 
+              answer="We accept all major credit cards, e-transfers, and cheques for commercial clients. Payment is typically processed after the cleaning is completed to your satisfaction."
+            />
+            <FaqItem 
+              question="Is there a cancellation fee?" 
+              answer="We understand that schedules change. We require 24 hours notice for cancellations. Cancellations made within 24 hours of the appointment may incur a $50 fee to cover our cleaners' time."
+            />
+             <FaqItem 
+              question="Are your cleaners insured and bonded?" 
+              answer="Yes, CMG Cleaning Solutions carries full liability insurance and all our employees are bonded. We also ensure all staff are covered by WSIB."
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
 };
+
+const FaqItem = ({ question, answer }: { question: string; answer: string }) => {
+  return (
+    <details className="group bg-gray-50 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden border border-gray-100 hover:border-blue-100 transition-colors">
+      <summary className="flex cursor-pointer items-center justify-between font-bold text-[#0F2C59] text-lg">
+        {question}
+        <span className="relative h-8 w-8 shrink-0 flex items-center justify-center bg-white rounded-full text-[#84A7D8] shadow-sm group-hover:bg-[#0F2C59] group-hover:text-white transition-all duration-300">
+           <ChevronDown className="h-5 w-5 transition duration-300 group-open:-rotate-180" />
+        </span>
+      </summary>
+      <p className="mt-4 leading-relaxed text-gray-600 pl-2">
+        {answer}
+      </p>
+    </details>
+  );
+}
 
 export default Contact;

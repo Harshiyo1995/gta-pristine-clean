@@ -213,6 +213,67 @@ p { margin-bottom: 1.5rem; }
   border-color: var(--color-navy);
 }
 
+/* FAQ Accordion */
+details {
+  background: var(--color-white);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+details[open] {
+  box-shadow: var(--shadow-card);
+  border-color: var(--color-light-blue);
+}
+
+summary {
+  padding: 20px 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--color-navy);
+  list-style: none;
+  position: relative;
+  padding-right: 50px;
+  background-color: var(--color-white);
+  transition: background-color 0.2s;
+}
+
+summary:hover {
+  background-color: #f8fafc;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: '+';
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-light-blue);
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+details p {
+  padding: 0 24px 24px;
+  margin-bottom: 0;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 20px;
+}
+
 /* =========================================
    5. NAVIGATION
    ========================================= */
@@ -302,6 +363,32 @@ header {
 .pricing-card {
   text-align: center;
   border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pricing-card .btn {
+    margin-top: auto;
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--color-light-blue);
+    position: relative;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-light-blue);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 .price {
@@ -451,4 +538,33 @@ footer {
     text-align: center;
     margin-bottom: 10px;
   }
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #0b1f40;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.85rem;
+  padding: 10px 0;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-info span {
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    .top-info span {
+        display: block;
+        margin: 0;
+    }
 }
